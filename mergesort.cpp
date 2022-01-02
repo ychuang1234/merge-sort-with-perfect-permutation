@@ -92,17 +92,5 @@ int main(){
 	partition(array,0,size/2,size/2);
 	stop = clock();
 	cout<<std::fixed<<std::setprecision(10)<<double(stop-start)/CLOCKS_PER_SEC<<" sec"<<endl;
-	//for (i=0;i<size;i++) cout<<array[i]<<" ";
-	//cout<<endl;
-
-	
-	/*
-    int id;
-    #pragma omp parallel private(id)
-        {
-        id = omp_get_thread_num();
-        printf("%d: Hello World!\n", id);
-        }
-	*/
     return 0;
 }
